@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #151D3B;
+}
+
+.chat{
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    color: white;
+    font-size: 4rem;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 60px;
+    background-color:#075E54;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 9;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.logo-brand{
+    position: relative;
+    padding-top: 30px;
+    font-size: 3em;
+    color: #E8F9FD;
+    font-weight: bolder;text-align: center;
+}
+
+.logo-brand > span:nth-child(1){
+    color: red;
+}
+
+main.login{
+    width: 80%;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    animation: pulse 2s;
+}
+main.register{
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    animation: pulse 2s;
+}
+.form-group.submit{
+    text-align: center;
+}
+
+.img-login{
+    flex-basis: 60%;
+}
+.img-login > img{
+    width: 100%;
+}
+
+.form-login{
+    flex-basis: 40%;
+    padding: 30px 10px;
+}
+
+.title{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.title::after{
+    content: "";
+    background-color: #FF1E00;
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.form-group{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-group > label{
+    font-size: 18px;
+}
+.input-form{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 3px;
+    border-bottom: 1px solid #19282F !important;
+    border: 0;
+}
+.input-form:focus{
+    transition: .2s;
+    border-bottom: 3px solid #FF1E00 !important;
+    outline: none;
+}
+
+a.forgot-password{
+    text-decoration: none;
+    margin: 10px auto;
+    color: #FF1E00;
+}
+.register > a{
+    color: #FF1E00;
+    text-decoration: none;
+}
+
+.btn-submit{
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FF1E00;
+    border: 0;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background-color: #151D3B;
+    transition: 0.8s;
+}
+.btn-sign-in-google{
+    width: 100%;
+    background-color: #E8F9FD;
+    padding: 10px;
+    border: 1px solid #19282F;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sign-in-google > img{
+    padding-right: 10px;
+}
+
+
+footer{
+    color: white;
+    padding: 10px;
+    background-color: #19282F;
+    width: 100%
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    flex-basis: 25%;
+}
+
+.footer > .logo-brand{
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+}
+.footer > .brand-description > p{
+    display: flex;
+    width: 50%;
+    padding-left: 10px;
+    font-size: 12px;
+}
+ul.footer.list-links, li.links-item{
+    list-style: none;
+}
+ul.footer.list-links, li.links-item > a{
+    text-decoration: none;
+    color: white;
+}
+li.links-item:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.brand-description   > .fa{
+    margin: 10px 0 10px 10px;
+    font-size: 20px;
+}
+.copyright{
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width:810px) {
+    main.login{
+        flex-direction: column !important;
+    }
+
+    .form-login{
+        padding: 10px;
+    }
+
+    .form-group{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .register{
+        margin: 0 auto;
+    }
+    .form-group > label{
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .footer > .logo-brand{
+        font-size: 20px;
+    }
+    .footer > .brand-description > p{
+        font-size: 11px;
+    }
+    li.links-item:nth-child(1){
+        font-size: 16px;
+    }
+    li.links-item{
+        font-size: 14px;
+    }
+    .brand-description   > .fa{
+        font-size: 16px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media screen and (max-width:694px) {
+    .logo-brand{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .form-group{
+        margin-bottom: 10px;
+    }
+    .forgot-password{
+        font-size: 12px !important;
+    }
+    main.register{
+        width: 80% ;
+    }
+    .form-group > label{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .row-footer{
+        flex-direction: column;
+    }
+    ul.footer.list-links{
+        margin-left: 10px;
+    }
+    .copyright{
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .chat{
+        font-size: 40px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .btn-sign-in-google{
+        font-size: 12px;
+    }
+}

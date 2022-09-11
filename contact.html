@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="chat">
+        <span class="fa fa-brands fa-whatsapp" onclick="chat()"></span>
+    </div>
+    <header style="background-color: #151D3B;">
+        <div class="logo-brand">
+            CUY <span>STORE <span class="fa fa-shop" aria-hidden="true"></span> </span>
+            <div class="sign-button">
+                <a href="login.html" class="sign sign-in">Login</a>
+                <a href="register.html" class="sign sign-up">Daftar</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon fa fa-home"></span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">
+                        <span class="nav-icon fa fa-cart-plus"></span>
+                        <span class="nav-text">Product</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <span class="nav-icon fa fa-info"></span>
+                    <span class="nav-text">About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <span class="nav-icon fa fa-contact-card"></span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="contact">
+        <h3 class="title">Contact Us</h3>
+        <form action="https://formspree.io/f/xaykynly" method="POST">
+            <div class="form-group">
+                <label for="name">Nama : </label>
+                <input type="text" name="name" id="name" class="input-form">
+            </div>
+            <div class="form-group">
+                <label for="name">Email : </label>
+                <input type="email" name="email" id="email" class="input-form">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" class="input-form" id="message" cols="1" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <div class="row-footer">
+            <div class="footer brand">
+                <div class="logo-brand">
+                    CUY <span>STORE <span class="fa fa-shop" aria-hidden="true"></span> </span>
+                </div>
+                <div class="brand-description">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, repellat nobis. Error quam eos modi natus rerum repellat ab officia.</p>
+                    <span class="fa fa-brands fa-instagram"></span>
+                    <span class="fa fa-brands fa-facebook"></span>
+                    <span class="fa fa-brands fa-twitter"></span>
+                </div>
+             </div>
+             <ul class="footer list-links">
+                <li class="links-item">Links</li>
+                <li class="links-item"><a href="index.html">Home</a></li>
+                <li class="links-item"><a href="product.html">Product</a></li>
+                <li class="links-item"><a href="about.html">About</a></li>
+                <li class="links-item"><a href="product.html">Store</a></li>
+                <li class="links-item"><a href="contact.html">Contact</a></li>
+             </ul>
+             <ul class="footer list-links">
+                <li class="links-item">Services</li>
+                <li class="links-item">About Us</li>
+                <li class="links-item">Blog & Article</li>
+                <li class="links-item">Terms and Condition</li>
+                <li class="links-item">Privacy Policy</li>
+                <li class="links-item">Contact Us</li>
+             </ul>
+             <ul class="footer list-links">
+                <li class="links-item">Contact</li>
+                <li class="links-item">Address: Jl. Marsda SUrya Dharma No.66</li>
+                <li class="links-item">Jambi</li>
+                <li class="links-item">Phone : 666-666-666</li>
+                <li class="links-item">Email : anonymous@gmail.com</li>
+                <li class="links-item">Maps : Jambi, Sumatera</li>
+             </ul>
+        </div>
+
+        <p class="copyright"><span class="fa fa-copyright"></span> Copyright 2022 | Allright Reserved </p>
+    </footer>
+    <script src="source.js"></script>
+</body>
+</html>

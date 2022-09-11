@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="chat">
+        <span class="fa fa-brands fa-whatsapp" onclick="chat()"></span>
+    </div>
+    <header style="background-color: #151D3B;">
+        <div class="logo-brand">
+            CUY <span>STORE <span class="fa fa-shop" aria-hidden="true"></span> </span>
+            <div class="sign-button">
+                <a href="login.html" class="sign sign-in">Login</a>
+                <a href="register.html" class="sign sign-up">Daftar</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon fa fa-home"></span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link">
+                        <span class="nav-icon fa fa-cart-plus"></span>
+                        <span class="nav-text">Product</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                    <span class="nav-icon fa fa-info"></span>
+                    <span class="nav-text">About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    <span class="nav-icon fa fa-contact-card"></span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- <ul class="navigasi-category">
+    <li onclick="filter('all')">All</li>
+    <li onclick="filter('baju')">Baju</li>
+    <li onclick="filter('sepatu')">Sepatu</li>
+    <li onclick="filter('aksesoris')">Aksesoris</li>
+</ul> -->
+
+<section id="carousel" class="carousel">
+
+    <div class="slider">
+        <div class="slides">
+            <!-- radio button start -->
+            <input type="radio" name="radio" id="radio1">
+            <input type="radio" name="radio" id="radio2">
+            <input type="radio" name="radio" id="radio3">
+            <input type="radio" name="radio" id="radio4">
+            <!-- radio button end -->
+            <!-- slide image start -->
+            <div class="slide first">
+                <img src="assets/poser.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="assets/bnr1.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="assets/bnr2.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="assets/bnr3.png" alt="">
+            </div>
+            <!-- slide image end -->
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn-1"></div>
+                <div class="auto-btn-2"></div>
+                <div class="auto-btn-3"></div>
+                <div class="auto-btn-4"></div>
+            </div>
+            <!-- automatic navigation end -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+    </div>
+
+</section>
+
+<section id="detailProduct">
+        
+</section>
+
+
+    <main class="main-content">
+        <h3 class="title" id="titleProduct">Product</h3>
+        <div id="category-product" class="row-category">
+            <div class="card-category-product" onclick="filter('baju');">
+                <img src="assets/baju.png" alt="">
+                <span class="caption">Baju</span>
+            </div>
+            <div class="card-category-product" onclick="filter('sepatu');">
+                <img src="assets/sepat.png" alt="">
+                <span class="caption">Sepatu</span>
+            </div>
+            <div class="card-category-product" onclick="filter('aksesoris');">
+                <img src="assets/tas.png" alt="">
+                <span class="caption">Aksesoris</span>
+            </div>
+        </div>
+        <div id="product" class="row">
+           <!-- Isi kontent hasil looping -->
+        </div>
+        <button onclick="filter('all')" class="btn-hover">Show All</button>
+    </main>
+
+    <section class="delivery-support">
+        <h3 class="title">Delivery Support</h3>
+        <div class="row">
+            <div class="card-delivery">
+                <img src="assets/anteraja.png" alt="">
+            </div>
+            <div class="card-delivery">
+                <img src="assets/jne.png" alt="">
+            </div>
+            <div class="card-delivery">
+                <img src="assets/jnt.png" alt="">
+            </div>
+            <div class="card-delivery">
+                <img src="assets/pos.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row-footer">
+            <div class="footer brand">
+                <div class="logo-brand">
+                    CUY <span>STORE <span class="fa fa-shop" aria-hidden="true"></span> </span>
+                </div>
+                <div class="brand-description">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, repellat nobis. Error quam eos modi natus rerum repellat ab officia.</p>
+                    <span class="fa fa-brands fa-instagram"></span>
+                    <span class="fa fa-brands fa-facebook"></span>
+                    <span class="fa fa-brands fa-twitter"></span>
+                </div>
+             </div>
+             <ul class="footer list-links">
+                <li class="links-item">Links</li>
+                <li class="links-item"><a href="index.html">Home</a></li>
+                <li class="links-item"><a href="product.html">Product</a></li>
+                <li class="links-item"><a href="about.html">About</a></li>
+                <li class="links-item"><a href="product.html">Store</a></li>
+                <li class="links-item"><a href="contact.html">Contact</a></li>
+             </ul>
+             <ul class="footer list-links">
+                <li class="links-item">Services</li>
+                <li class="links-item">About Us</li>
+                <li class="links-item">Blog & Article</li>
+                <li class="links-item">Terms and Condition</li>
+                <li class="links-item">Privacy Policy</li>
+                <li class="links-item">Contact Us</li>
+             </ul>
+             <ul class="footer list-links">
+                <li class="links-item">Contact</li>
+                <li class="links-item">Address: Jl. Marsda SUrya Dharma No.66</li>
+                <li class="links-item">Jambi</li>
+                <li class="links-item">Phone : 666-666-666</li>
+                <li class="links-item">Email : anonymous@gmail.com</li>
+                <li class="links-item">Maps : Jambi, Sumatera</li>
+             </ul>
+        </div>
+
+        <p class="copyright"><span class="fa fa-copyright"></span> Copyright 2022 | Allright Reserved </p>
+    </footer>
+
+    <script src="source.js"></script>
+</body>
+</html>
